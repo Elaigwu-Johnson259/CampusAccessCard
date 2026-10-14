@@ -19,6 +19,14 @@ class TestValidation(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate_fellow_id("  ")
 
+    def test_invalid_fellow_id_rejected(self):
+        with self.assertRaises(ValueError):
+            validate_fellow_id("rubbish")
+
+    def test_malformed_fellow_id_rejected(self):
+        with self.assertRaises(ValueError):
+            validate_fellow_id("F12")
+
     def test_invalid_card_type_(self):
         self.assertEqual(validate_card_type("visitor"), "visitor")
 

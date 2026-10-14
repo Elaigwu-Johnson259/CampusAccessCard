@@ -5,8 +5,19 @@ STATUSES = ("requested", "approved", "issued", "returned")
 
 
 def validate_fellow_id(fellow_id):
-    if not isinstance(fellow_id, str) or not fellow_id.strip():
-        raise ValueError("Fellow ID must be a non-empty string.")
+    if not isinstance(fellow_id, str):
+        raise ValueError("Fellow ID must be a string.")
+
+    if not fellow_id:
+        raise ValueError("Fellow ID must not be empty.")
+
+    if (
+        len(fellow_id) != 4
+        or fellow_id[0] != "F"
+        or not all("0" <= char <= "9" for char in fellow_id[1:])
+    ):
+        raise ValueError("Fellow ID must be in the format F001.")
+
     return fellow_id
 
 
