@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 A project built by Johnson Elaigwu Peter and Victoria Ada Abah 
 
 # Campus Access Card Management System
@@ -139,3 +140,5 @@ Changes are integrated through feature branches and pull requests.
 
 Add the project's chosen license here if one is selected.
 
+=======
+>>>>>>> origin/main
