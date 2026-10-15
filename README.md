@@ -1,5 +1,5 @@
 
-##A project built by Johnson Elaigwu Peter and Victoria Ada Abah
+## A project built by Johnson Elaigwu Peter and Victoria Ada Abah
 
 # Campus Access Card Management System
 
