@@ -100,6 +100,12 @@ class TestStorage(unittest.TestCase):
         with self.assertRaises(ValueError):
             storage.load_requests(self.file_path)
 
+    def test_duplicate_fellow_id_rejected(self):
+        storage.create_request("F001", "student")
+
+        with self.assertRaises(ValueError):
+            storage.create_request("F001", "staff")
+
 
 if __name__ == "__main__":
     unittest.main()
