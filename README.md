@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-A project built by Johnson Elaigwu Peter and Victoria Ada Abah 
+
+##A project built by Johnson Elaigwu Peter and Victoria Ada Abah## 
 
 # Campus Access Card Management System
 
@@ -128,17 +128,3 @@ The project is developed collaboratively using Git and GitHub.
 
 Changes are integrated through feature branches and pull requests.
 
-## Future Improvements
-
-- Add user authentication and role-based permissions.
-- Introduce a graphical or web-based interface.
-- Use a database for more robust persistent storage.
-- Add audit logs for approvals, issuance, and returns.
-- Improve reporting and request search capabilities.
-
-## License
-
-Add the project's chosen license here if one is selected.
-
-=======
->>>>>>> origin/main
