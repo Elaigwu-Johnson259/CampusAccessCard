@@ -16,6 +16,12 @@ def create_request(fellow_id, card_type):
     validate_fellow_id(fellow_id)
     validate_card_type(card_type)
 
+    for request in _requests:
+        if request["fellow_id"] == fellow_id:
+            raise ValueError(
+                f"A request already exists for Fellow ID {fellow_id}."
+            )
+
     next_number = max(
         (int(request["id"][1:]) for request in _requests),
         default=0,
