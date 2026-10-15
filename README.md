@@ -1,3 +1,6 @@
+A project built by Johnson Elaigwu peter(Engineer A) and Victoria abah(Engineer B) 
+
+
 # Campus Access Card Management System
 
 ## Overview
