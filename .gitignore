@@ -3,3 +3,18 @@ __pycache__/
 data/
 .venv/
 
+
+# API keys and environment secrets
+.env
+**/.env
+.env.local
+**/.env.local
+
+# Python virtual environments
+.venv/
+venv/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/

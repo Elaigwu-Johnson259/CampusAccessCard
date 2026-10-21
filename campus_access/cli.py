@@ -27,9 +27,10 @@ def run_menu():
         print("6. List all requests")
         print("7. Save requests")
         print("8. Save and exit")
+        print("9. AI Assistant")
         print("-----------------------------------------")
 
-        choice = input("Choose an option (1-8): ").strip()
+        choice = input("Choose an option (1-9): ").strip()
 
         try:
             if choice == "1":
@@ -130,6 +131,12 @@ def run_menu():
                 print("Management System. Goodbye!")
                 break
 
+
+            elif choice == "9":
+                from .ai_cli import run_ai_assistant
+
+                run_ai_assistant()
+                
             else:
                 print("\n[INVALID OPTION] Choose a number from 1 to 8.")
 
