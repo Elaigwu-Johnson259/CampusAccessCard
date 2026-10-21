@@ -35,7 +35,19 @@ if not MODEL:
     )
 
 
-client = genai.Client(api_key=API_KEY)
+client = genai.Client(
+    api_key=API_KEY,
+    http_options=types.HttpOptions(
+        timeout=60000,
+        retry_options=types.HttpRetryOptions(
+            attempts=3,
+            initial_delay=1,
+            max_delay=10,
+            exp_base=2,
+            jitter=1,
+        ),
+    ),
+)
 
 
 SYSTEM_INSTRUCTION = """
