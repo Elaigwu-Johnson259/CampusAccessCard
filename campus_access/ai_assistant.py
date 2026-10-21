@@ -116,8 +116,10 @@ def ask_campus_access_ai(question: str) -> str:
             "Gemini assistant error:",
             type(exc).__name__,
         )
+        print("Details:", str(exc)[:300])  # temporary, for debugging
 
         return (
             "The AI assistant is temporarily unavailable. "
             "Please try again or use the normal application menu."
         )
+ 
